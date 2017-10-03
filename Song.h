@@ -2,6 +2,8 @@
 #define Song_h
 #include <deque>
 #include <string>
+#include <fstream>
+
 
 class Song {
 public:
@@ -42,6 +44,9 @@ public:
     bool chk_find_tonalita();
     bool chk_find_intro();
     
+    void read_from_file( std::ifstream &inFile);
+    void analyze();
+    
     std::string replaceChords( std::string line );
 
     
@@ -61,6 +66,9 @@ private:
     bool findIntro;
     
     std::string convertChords( std::string accordo );
+    std::string convertChords_lowercase( std::string accordo );
+    std::string removeAccented( std::string str );
+
 
 };
 #endif
