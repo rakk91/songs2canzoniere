@@ -276,10 +276,8 @@ std::string Song::removeAccented( std::string str ) {
     tr = "AAAAAAECEEEEIIIIDNOOOOOx0UUUUYPsaaaaaaeceeeeiiiiOnooooo/0uuuuypy";
     while ( chr!=str.end() ) {
         unsigned char ch = *chr;
-        std::cout << (int) ch << "-";
         if ( ch == 195 ) {                     // rimozione accenti
             ch = *(++chr);
-            std::cout << (int) ch << std::endl;
             newString.push_back(tr[ ch-128 ]);
         }
         else if ( ch == 39){ ++chr; continue;} // rimozione apostrofo

@@ -1,0 +1,22 @@
+Specifiche per identificatore:
+[FATTO]-> stringhe caratteri minuscoli, non accentati,
+[FATTO]-> spazi diventano underscore
+[FATTO]-> apostrofi rimossi
+
+Sperifiche tonalità:
+[FATTO]-> Bemolle come b e non &
+[FATTO]-> Accordi in formato misto (DO -> Do) 
+	Creo una nuova funzione convertChords_lowercase che restituisce la
+	scrittura in minuscolo.
+-> Tiene conto del \transpose{n}
+	Qui l'idea potrebbe essere di usare un array circolare (da gestire
+	con il 'mod': memorizzo 'n' e poi nell'identificazione del primo
+	accordo sostituisco con 'accordo+n'
+
+Autore della canzonie (nel condice LaTeX)
+\by={Cognome} e non \by={Nome e Cognome}
+
+Da sistemare algoritmo di analisi:
+[FATTO]-> Controllare come viene copiato riga per riga
+[FATTO]-> Non impazzire se trova uno spazio bianco
+-> Saltare le righe commentate o copiarle ma commentate
