@@ -3,7 +3,7 @@
 ## Purpose of the code
 This is a C++ script for translate my usualty .tex code for songs to the .tex code for the canzonierionline.it.
 
-##Usage
+## Usage
 After compile it using the `Makefile` via `make`, you can use it by:
 
     sng2cnz <filename> <directory>
